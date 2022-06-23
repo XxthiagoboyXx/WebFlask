@@ -32,7 +32,7 @@ def add_post():
         db.session.add(publi) #adiciona no banco de dados
         db.session.commit() #salva definitivamente no banco de dados
     except Exception as e:
-        print("Error ",e)
+        print("Error ", e)
 
     return redirect(url_for("home")) #quando é feito o post o usuário é redirecionado para a View Home
 
